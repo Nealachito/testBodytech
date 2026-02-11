@@ -57,4 +57,23 @@ class UploadController extends Controller
             'data' => $fileUpload
         ]);
     }
+
+    public function results($id)
+{
+    $fileUpload = FileUpload::find($id);
+
+    if (!$fileUpload) {
+        return response()->json(['message' => 'No encontrado'], 404);
+    }
+
+    return response()->json([
+        'id' => $fileUpload->id,
+        'filename' => $fileUpload->filename,
+        'total_emails' => $fileUpload->total_emails,
+        'valid_emails' => $fileUpload->valid_emails,
+        'invalid_emails' => $fileUpload->invalid_emails,
+        'status' => $fileUpload->status
+    ]);
+}
+
 }
