@@ -101,3 +101,35 @@ php artisan queue:work
     *Guarda resultados
     *Actualiza progreso
     *Frontend consulta estado hasta completarse
+---
+⚡ Manejo de Procesamiento Prolongado
+
+Uso de Queue
+
+Uso de HTTP Pool
+
+Actualización por batches
+
+Polling desde frontend
+
+---
+
+🧠 Decisiones Técnicas
+
+Separación clara de responsabilidades
+
+Persistencia incremental
+
+Optimización de requests externos
+
+Manejo de errores con timeout y retry
+
+---
+
+📌 Consideraciones
+
+No se implementó autenticación (según requerimientos)
+
+No se valida existencia real del correo
+
+El sistema procesa todos los registros
