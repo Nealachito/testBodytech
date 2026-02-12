@@ -133,3 +133,9 @@ No se implementó autenticación (según requerimientos)
 No se valida existencia real del correo
 
 El sistema procesa todos los registros
+
+---
+
+👨‍💻 Autor
+
+Neal De oro
